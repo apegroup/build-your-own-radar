@@ -31,6 +31,9 @@ module.exports = merge(common, {
     hints: false,
   },
   module: {
+    output: {
+      publicPath: '/build-your-own-radar/',
+    },
     rules: [
       {
         test: /\.scss$/,
