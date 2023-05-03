@@ -31,9 +31,6 @@ module.exports = merge(common, {
     hints: false,
   },
   module: {
-    output: {
-      publicPath: '/build-your-own-radar/',
-    },
     rules: [
       {
         test: /\.scss$/,
@@ -67,6 +64,9 @@ module.exports = merge(common, {
         ],
       },
     ],
+  },
+  output: {
+    publicPath: '/build-your-own-radar/',
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
